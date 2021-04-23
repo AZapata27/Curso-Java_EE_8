@@ -2,6 +2,8 @@
 
 Se Toma curso de Java EE en Udemy actualizado 2021 
 
+Proyecto Sistema de Gestion de Alumnos , BD: MySql , server: GlassFish
+
 url: https://www.udemy.com/course/aprende-java-enterprise-edition-javaee-paso-a-paso/
 
 
