@@ -1,6 +1,6 @@
 # Curso-Java_EE_8
 
-Se Toma curso de Java EE en Udemy url: https://www.udemy.com/course/aprende-java-enterprise-edition-javaee-paso-a-paso/
+Se Toma curso de Java EE en Udemy actualizado 2021     url: https://www.udemy.com/course/aprende-java-enterprise-edition-javaee-paso-a-paso/
 
 Módulo I. Introducción a Java EE
 
