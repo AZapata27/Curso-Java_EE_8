@@ -22,7 +22,6 @@ public class PruebaTransaccionesEJB {
      
         Persona persona1 = personaService.encontrarPersonaPorId(new Persona(1));
         
-        log.debug("persona recuredad: "+ persona1);
   
     
 
