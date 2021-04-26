@@ -18,7 +18,7 @@ Módulo III. Java Persistance API y Ciclo de vida (JPA) Criterial api
 
 Módulo IV. Servlets y JSPs en Java EE
 
-Módulo V. JavaServer Faces (JSF)
+Módulo V. JavaServer Faces (JSF) PrimeFaces y RichFaces
 
 Módulo VI. JAX-WS Web Services en JEE y Seguridad en JEE
 
