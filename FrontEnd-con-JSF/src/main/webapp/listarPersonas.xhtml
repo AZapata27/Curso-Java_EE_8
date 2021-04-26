@@ -23,67 +23,76 @@
         <h:form prependId="false">
             <p:growl id="messages" showDetail="true"/>
 
-            <p:dataTable value="#{personaBean.personas}" var="persona" editable="true">
+            <p:dataTable value="#{personaBean.personas}" var="persona" editable="true" rowKey="#{persona.id_persona}"
+                         selection="#{personaBean.personaSeleccionada}" selectionMode="single">
                 <f:facet name="header">
                     Listado de Personas
                 </f:facet>
 
-                <p:column headerText="Nombre">
-                    <p:cellEditor>
-                        <f:facet name="output">
-                            <h:outputText value="#{persona.nombre}"/>
-                        </f:facet>
-                        <f:facet name="input">
-                            <p:inputText value="#{persona.nombre}"/>
-                        </f:facet>
-                    </p:cellEditor>
-                </p:column>
+                <p:column headerText="Id">
+                    <h:outputText value="#{persona.idPersona}"
+                                  </p:column>
 
-                <p:column headerText="Apellido">
-                    <p:cellEditor>
-                        <f:facet name="output">
-                            <h:outputText value="#{persona.apellido}"/>
+                        <p:column headerText="Nombre">
+                            <p:cellEditor>
+                                <f:facet name="output">
+                                    <h:outputText value="#{persona.nombre}"/>
+                                </f:facet>
+                                <f:facet name="input">
+                                    <p:inputText value="#{persona.nombre}"/>
+                                </f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Apellido">
+                            <p:cellEditor>
+                                <f:facet name="output">
+                                    <h:outputText value="#{persona.apellido}"/>
+                                </f:facet>
+                                <f:facet name="input">
+                                    <p:inputText value="#{persona.apellido}"/>
+                                </f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Email">
+                            <p:cellEditor>
+                                <f:facet name="output">
+                                    <h:outputText value="#{persona.email}"/>
+                                </f:facet>
+                                <f:facet name="input">
+                                    <p:inputText value="#{persona.email}"/>
+                                </f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Telefono">
+                            <p:cellEditor>
+                                <f:facet name="output">
+                                    <h:outputText value="#{persona.telefono}"/>
+                                </f:facet>
+                                <f:facet name="input">
+                                    <p:inputText value="#{persona.telefono}" />
+                                </f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Opciones" style="width: 50px;">
+                            <p:rowEditor/>
+                        </p:column>
+
+
+                        <f:facet name="footer">
+                            <h:commandButton value="Regresar" action="index"/>
+                            <p:spacer height="5px"/>
+                            <h:commandButton value="Registrar" actionListener="#{persona.reiniciarPersonaSeleccionada}"/>
+
                         </f:facet>
-                        <f:facet name="input">
-                            <p:inputText value="#{persona.apellido}"/>
-                        </f:facet>
-                    </p:cellEditor>
-                </p:column>
 
-                <p:column headerText="Email">
-                    <p:cellEditor>
-                        <f:facet name="output">
-                            <h:outputText value="#{persona.email}"/>
-                        </f:facet>
-                        <f:facet name="input">
-                            <p:inputText value="#{persona.email}"/>
-                        </f:facet>
-                    </p:cellEditor>
-                </p:column>
+                        <p:ajax event="rowEdit" listener="#{personaBean.editListener}"/>
 
-                <p:column headerText="Telefono">
-                    <p:cellEditor>
-                        <f:facet name="output">
-                            <h:outputText value="#{persona.telefono}"/>
-                        </f:facet>
-                        <f:facet name="input">
-                            <p:inputText value="#{persona.telefono}" />
-                        </f:facet>
-                    </p:cellEditor>
-                </p:column>
+                        </p:dataTable>
+                        </h:form>
 
-                <f:facet name="footer">
-                    <h:commandButton value="Regresar" action="index"/>
-
-                </f:facet>
-                <p:column headerText="Opciones" style="width: 50px;">
-                    <p:rowEditor/>
-                </p:column>
-
-                <p:ajax event="rowEdit" listener="#{personaBean.editListener}"/>
-
-            </p:dataTable>
-        </h:form>
-
-    </h:body>
-</html>
+                        </h:body>
+                        </html>

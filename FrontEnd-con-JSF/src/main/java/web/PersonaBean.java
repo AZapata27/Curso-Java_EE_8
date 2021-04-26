@@ -41,6 +41,38 @@ public class PersonaBean {
         Persona persona= (Persona) event.getObject();
         personaService.modificarPersona(persona);
     }
+    
+    public void registrarPersona(){
+        
+        this.personaService.registrarPersona(personaSeleccionada);
+        this.personas.add(personaSeleccionada);
+        this.personaSeleccionada=null;
+        
+    }
+    
+    public void eliminarPersona(){
+        
+        this.personaService.eliminarPersona(personaSeleccionada);
+        this.personas.remove(personaSeleccionada);
+        this.personaSeleccionada=null;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     public Persona getPersonaSeleccionada() {
         return personaSeleccionada;
