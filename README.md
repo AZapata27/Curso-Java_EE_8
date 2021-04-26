@@ -20,7 +20,9 @@ Módulo IV. Servlets y JSPs en Java EE
 
 Módulo V. JavaServer Faces (JSF) PrimeFaces y RichFaces
 
-Módulo VI. JAX-WS Web Services en JEE y Seguridad en JEE
+Módulo VI. JAX-WS Web Services SOAP Y REST en JEE
+
+Módulo V. Seguridad en JEE Roles y autentificaciones
 
 
 
