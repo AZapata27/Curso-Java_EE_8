@@ -12,7 +12,6 @@ public class HolaMundo extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response){
         response.setContentType("text/html;charset=UTF-8");
 
-
         try {
             PrintWriter out = response.getWriter();
             out.println("Hola Mundo");
