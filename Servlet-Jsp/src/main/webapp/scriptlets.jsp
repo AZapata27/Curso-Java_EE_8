@@ -8,8 +8,7 @@
     <br>
     <%--Scriptlet para envar informacion al navegador --%>
     
-    <% 
-
+    <%
     %>
 </body>
 </html>
